@@ -1,0 +1,7 @@
+{
+  "paths_to_contracts": {
+      "eosio.boot":   "/path",
+      "eosio.system": "/path",
+      "eosio.token":  "/path"
+  }
+}
