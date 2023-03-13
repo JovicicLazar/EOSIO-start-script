@@ -131,7 +131,7 @@ class Genesis:
                 genesis_start.write('--connection-cleanup-period 10 \\\n')
                 genesis_start.write('--producer-name eosio \\\n')
                 genesis_start.write('--http-server-address 0.0.0.0:8888 \\\n')
-                genesis_start.write('--p2p-listen-endpoint bis.blockchain-servers.world:9010 \\\n')
+                genesis_start.write('--p2p-listen-endpoint yourVPS:9010 \\\n')
                 genesis_start.write(f'--signature-provider {self.public_key}=KEY:{self.private_key} \\\n')
                 genesis_start.write('>> $DATADIR"/nodeos.log" 2>&1 & \\\n')
                 genesis_start.write('echo $! > $DATADIR"/eosd.pid"')
